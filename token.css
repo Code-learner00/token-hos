@@ -1,0 +1,65 @@
+/* token.css */
+
+.ticket {
+    /* Token card container */
+    width: 300px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 40px auto; /* Add this line to center the container */
+    display: block; /* Add this line to make the container a block element */
+  }
+  
+  .form-group {
+    /* Form group container */
+    margin-bottom: 20px;
+    display: flex; /* Add this line to make the label and input inline */
+    align-items: center; /* Add this line to vertically center the label and input */
+  }
+  
+  label {
+    /* Label styles */
+    width: 120px;
+    margin-right: 10px;
+    font-weight: bold;
+  }
+  
+  .form-control {
+    /* Input field styles */
+    width: 150px;
+    height: 30px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .form-control:focus {
+    /* Input field focus styles */
+    border-color: #aaa;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  button#btnPrint {
+    /* Print button styles */
+    margin: 20px auto; /* Add this line to center the button */
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #4CAF50;
+    color: #fff;
+    cursor: pointer;
+    display: block; /* Add this line to make the button a block element */
+  }
+  
+  button#btnPrint:hover {
+    /* Print button hover styles */
+    background-color: #3e8e41;
+  }
+
+
+  #printers {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+}
