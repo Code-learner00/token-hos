@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="token.css">
+    <title>Receipt example</title>
+</head>
+  <body>
+    <div class="ticket">
+        <div class="form-group">
+            <label for="hospital-name">Hospital Name:</label>
+            <input type="text" id="hospital-name" class="form-control" value="My Hospital">
+        </div>
+        <div class="form-group">
+            <label for="patient-name">Patient Name:</label>
+            <input type="text" id="patient-name" class="form-control">
+        </div>
+        <div class="form-group">
+            <label for="visitor-name">Visitor Name:</label>
+            <input type="text" id="visitor-name" class="form-control">
+        </div>
+        <div class="form-group">
+            <label for="visitor-ph-no">Visitor Phone No:</label>
+            <input type="tel" id="visitor-ph-no" class="form-control">
+        </div>
+        <div class="form-group">
+            <label for="token-no">Token No:</label>
+            <input type="number" id="token-no" class="form-control">
+        </div>
+        <div class="form-group">
+            <label for="date-time">Date and Time:</label>
+            <input type="datetime-local" id="date-time" class="form-control">
+        </div>
+        <div class="form-group">
+            <label for="time">Time:</label>
+            <input type="time" id="time" class="form-control">
+        </div>
+        <select id="printers">
+          <option value="1">1 Printer</option>
+          <option value="2">2 Printers</option>
+          <option value="3">3 Printers</option>
+          <option value="4">4 Printers</option>
+          <option value="5">5 Printers</option>
+      </select>
+    </div>
+    <button id="btnPrint" class="hidden-print" onclick="printReceipt()">Print</button>
+    <script src="//cdn.jsdelivr.net/npm/escpos@3.0.0-alpha.6/index.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="token.js"></script>
+</body>
+</html>
